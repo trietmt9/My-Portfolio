@@ -1,38 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--================== CSS ==================-->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Stephen Truong</title>
 </head>
 <body>
-    <h1>Trương Minh Triết (English name: Stephen Truong)</h1>
-    <h2>Embedded system engineer</h2>
-    <h3>Introduction</h3>
-    <p>Hi, I'm an embedded systems developer from Ho Chi Minh City, Vietnam.<br/>
-    I've worked on a range of exciting projects in IoT, robotics, and AI.<br/>
-    I’m passionate about the world of technology, and I’ve had hands-on experience with every part of the process, from hardware design to firmware and software development.<br/> 
-    Whether it’s creating a smart device, building autonomous robots, or exploring AI applications, I love bringing ideas to life through tech.<br/> 
-    If you're interested in embedded systems or just want to chat about cool tech projects, I'd love to connect!</p>
-    <h3>Contact</h3>
-    <ul>
-    <li><a href = "https://github.com/trietmt9">Github</a></li>
-    <li><a href = "https://www.linkedin.com/in/trương-minh-triết-6743b4269/">LinkedIn</a></li>
-    <li>Facebook</li>
-    <li>Instagram</li>
-    </ul>
-    <h3>Knowledge</h3>
-    <p>
-    The list below are the relevant knowledge that I had worked with in my projects.<br>
-    </p>
-    <ol>
-        <li>ARM cortex</li>
-        <li>ROS2</li>
-        <li>Classic AUTOSAR</li>
-        <li>Altium Designer</li>
-        <li>NodeRed</li>
-        <li>Tensorflow</li>
-    </ol>
-    <h3>Projects</h3>
+    <!-- ================= HEADER ================= -->   
+    <header class="header" id=" header"> 
+        <!-- navigate  -->
+         <nav class="nav container padd-15">
+            <!-- nav logo -->
+             <a href="#" class="nav-logo">
+                <h2> Stephen </h2>
+             </a>
+            <!-- nav menu -->
+             <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link"> Home </a>
+                    </li>
+
+                    <!--  INTRODUCTION -->
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"> About </a>
+                    </li>
+
+                    <!--  EXPERIENCES -->
+                    <li class="nav-item">
+                        <a href="#exp" class="nav-link"> Experiences </a>
+                    </li>
+
+                    <!--  PROJECT -->
+                    <li class="nav-item">
+                        <a href="#prj" class="nav-link"> Projects </a>
+                    </li>
+
+                    <!--  CONTACT --> 
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"> Contact </a>
+                    </li>
+                    
+                </ul>
+
+                <!-- Nav button -->
+                 <div class="nav-buttons"> 
+                    <!-- theme -->
+                     <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                     <div class="nav-toggle" id="nav-toggle">
+                        <i class="lni lni-grid-alt"></i>
+                     </div>
+                 </div>
+             </div>
+         </nav>
+    </header>
+    <!--================== MAIN ==================-->
+    <main class="main-content">
+        <!-- HOME  -->
+         <section class="home" id="home">
+            <div class="container">
+                <!-- INTRO -->
+                 <div class="intro">
+                    <!-- avatar image -->
+                     <img src="assets/img/avatar.jpg" width="300" height="300" alt="Stephen">
+                     <!-- INFO -->
+                      <h1>Stephen Truong (Truong Minh Triet)</h1>
+                     <span class="info-text"> Embedded System Engineer </span>
+
+                      <!-- SOCIAL ICON -->
+                       <ul class="social-icons"> 
+                            <li><a href="#"><i class="lni lni-github"></i></a></li>
+                            <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                            <li><a href="#"><i class="lni lni-facebook"></i></a></li>
+                            <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+                            <li><a href="#"><i class="lni lni-youtube"></i></a></li>
+                        </ul>
+                       
+                        <!-- BUTTON -->
+                        <div>
+                            <a href="#" class="btn btn-default"> Contact me </a>
+                        </div>
+
+                        <!-- Scroll down -->
+                         <div class="scroll-down">
+                            <a href="#" class="mouse-wrapper">
+                                <span> Scroll down </span>
+                                <span class="mouse">
+                                    <span class="wheel">
+                                        
+                                    </span>
+                                </span>
+                            </a>
+                         </div>
+                 </div> 
+            </div>
+         </section>
+    </main>
+    <!--================== SWIPERJS ==================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--================== JS ==================-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
