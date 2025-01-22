@@ -420,7 +420,7 @@ img
 
 .about-text p 
 {
-    text-align: justify;
+    text-align:  justify;
     margin-bottom: var(--m-1);
 }
 
@@ -519,4 +519,39 @@ img
 .text a
 {
     color: var(--color-primary);
+}
+
+/* ======================= EXPERIENCES ======================= */
+.education
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.experience 
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.timeline
+{
+    background-color: var(--color-white);
+    padding: 1.9rem 0.95rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    position: relative;
+}
+
+.timeline .timeline-item 
+{
+    position: relative;
+    padding-left: 2.5rem;
+    padding-bottom: 1.9rem;
 }
