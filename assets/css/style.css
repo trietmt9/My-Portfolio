@@ -283,10 +283,10 @@ h3
 }
 
 /* ======================= HOME ======================= */
-img
+.avatar
 {
-    width: 150px;
-    height: 145px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
 }
 .home
