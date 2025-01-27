@@ -45,7 +45,18 @@
     --box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1); 
 
 }
-
+     /* RESPONSIVE TYPOGRAPHY */
+@media screen and (max-width: 992px) 
+{
+    :root
+    {
+        --h1-font-size:     1.75rem;
+        --h2-font-size:     1.5rem;
+        --h3-font-size:     1rem;
+        --normal-font-size: .938rem;
+        --small-font-size:  0.813rem;
+    }
+}
 /* ================= BASE ================= */
 *
 {
@@ -845,6 +856,7 @@ h3
     display: grid;
     place-items: center;
     font-size: var(--small-font-size);
+    display: none;
 }
 
 .custom-theme .card 
@@ -917,4 +929,91 @@ h3
     height: 1.8rem;
     border-radius: 50%;
     background: var(--color-primary);
+}
+
+.custom-theme .choose-color span:nth-child(1)
+{
+    background:  hsl(252, 75%, 60%);
+}
+
+.custom-theme .choose-color span:nth-child(2)
+{
+    background:  hsl(52, 75%, 60%);
+}
+
+.custom-theme .choose-color span:nth-child(3)
+{
+    background:  hsl(352, 75%, 60%);
+}
+
+.custom-theme .choose-color span:nth-child(4)
+{
+    background:  hsl(152, 75%, 60%);
+}
+
+.custom-theme .choose-color span:nth-child(5)
+{
+    background:  hsl(202, 75%, 60%);
+}
+
+.custom-theme .choose-color span.active 
+{
+    border: 5px solid #fff ;
+}
+
+.custom-theme .background
+{
+    margin-top: var(--m-2) ;
+}
+
+.custom-theme .choose-bg
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+}
+
+.custom-theme .choose-bg > div
+{
+    padding: .8rem .20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.custom-theme .choose-bg > div.active 
+{
+    border: 2px solid var(--color-primary);
+
+}
+
+.custom-theme .choose-bg .bg-1
+{
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.custom-theme .choose-bg .bg-2
+{
+    background: hsl(252, 30%, 17%);
+    color: #fff;
+}
+
+.custom-theme .choose-bg .bg-3
+{
+    background: hsl(252, 30%, 10%);
+    color: #fff;
+
+}
+
+.custom-theme .choose-bg > div span
+{
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
 }
